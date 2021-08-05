@@ -25,9 +25,9 @@ export class AppComponent {
   normalArr = [];
 
   constructor() { this.nav = navigator;
-    AWS.config.region = 'us-east-2'; // Region
+    AWS.config.region = 'us-east-1'; // Region
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-2:e92eec9c-d9d8-46be-a57c-6b585c90b76f',
+        IdentityPoolId: 'us-east-1:4d4bb39a-a3c1-4d17-959c-7a55baa1dbbe',
     });
     this.s3 = new AWS.S3({
       apiVersion: "2006-03-01",
